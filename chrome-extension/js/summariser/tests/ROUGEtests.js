@@ -1,0 +1,1 @@
+const rouge = require('rouge');

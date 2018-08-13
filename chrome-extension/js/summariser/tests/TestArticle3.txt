@@ -1,0 +1,29 @@
+The DDoS attacks reported by the FCC last year didn't actually happen
+
+The Office of the Inspector General determined that the FCC's report of cyberattacks, which prevented people from leaving comments about Net Neutrality, was false.
+
+Back in May 2017, John Oliver did a bit on net neutrality that concluded with a call for viewers to visit the FCC website (via gofccyourself.com) and urge it to preserve net neutrality. (A fruitless effort, as it turned out.) The FCC website was subsequently slammed, but the agency said that it was the result of a DDoS attack that prevented people from leaving comments, and not an overwhelming influx of angry Last Week Tonight fans.
+
+“These actors were not attempting to file comments themselves; rather they made it difficult for legitimate commenters to access and file with the FCC," FCC chief information officer David Bray said at the time.
+
+It's now come to light that the claim wasn't actually true, however. As reported by Gizmodo, an investigation conducted by the FCC's inspector general that was released yesterday concluded that the downtime was not the result of a cyberattack, but rather "design issues" with the FCC website.
+
+"Evidence of coordination in a DDoS may include identical requests, identical user-agents, or large waves of simultaneous activity. We found no evidence of such coordination," the Office of Inspector General report explains. "During our discussion with the FBI SA on May 15, 2017, we specifically asked if the FBI was aware of any intelligence suggesting there was a coordinated attack, and we were advised the FBI had no such intelligence."
+
+"The degradation of ECFS [Electronic Comment Filing System] system availability was likely the result of a combination of: (1) 'flash crowd' activity resulting from the Last Week Tonight with John Oliver episode that aired on May 7, 2017 through the links provided by that program for filing comments in the proceeding; and (2) high volume traffic resulting from system design issues."
+
+The report also specifically calls out the FCC's statement immediately following the outage, in which Bray said that "our analysis reveals that the FCC was subject to multiple distributed denial-of-service attacks (DDoS)."
+
+"OIG first became concerned about the veracity of the analysis referenced by Bray in the press release during a teleconference with Leo [Wong] and [Tony] Summerlin on June 20, 2017. During the teleconference, OIG was advised by Wong that no document was prepared summarizing the analysis referenced in the press release," the report says.
+
+"Wong further stated that 'analysis' would be a strong word to describe the work done to support the conclusion that Bray made in the press release and that 'preliminary assessment' would be a better way to describe the work that was done. Wong explained that FCC IT group staff 'analyzed the logs' and identified a large number of API hits that did not result in comments being filed. They also analyzed where the 'bots' and/or API calls were originating and determined they were coming from cloud providers. Wong explained that this analysis was the basis for Bray’s statement. OIG was further advised that no additional analysis or after-action work has been done related to the alleged DDoS."
+
+Summerlin, a contractor serving as senior strategic advisor to the FCC, also argued against the DDoS characterization during the investigation: "Summerlin was unsure where Bray got some of his information regarding the intent of comment filers or potentially malicious intent of bots. He also disagreed with Bray's characterization of summary counts of API activity as analysis. Summerlin and Bray had argued extensively on Bray's definition of 'analysis.' Summerline characterized the summary counts of API activity as an 'observation' as opposed to analysis."
+
+The OIG's conclusion is unequivocal and damning. "The May 7-8, 2016 degradation of the FCC’s ECFS was not, as reported to the public and to Congress, the result of a DDoS attack. At best, the published reports were the result of a rush to judgment and the failure to conduct analyses needed to identify the true cause of the disruption to system availability. Rather than engaging in a concerted effort to understand better the systematic reasons for the incident, certain managers and staff at the Commission mischaracterized the event to the Office of the Chairman as resulting from a criminal act, rather than apparent shortcomings in the system."
+
+FCC chairman Ajit Pai, in fine form, was quick to point the finger of blame elsewhere, saying in a written response that Summerlin and deputy chief information officer Christine Calvosa had both assured him, as had Bray, "that this incident had been caused by bots rather than individuals attempting to file comments with the Commission."
+
+"Moreover, during this meeting, neither Mr. Summerlin nor Ms. Calvosa said anything that suggested that they disagreed with the explanation Mr. Bray had provided to my office and to Congress about what happened on May 7-8, 2017," Pai wrote. "For these reasons, I was surprised and disappointed when I learned of the findings of the Office of the Inspector General's investigation."
+
+The OIG said it would now refer the matter to the Office of the Chairman "for review and appropriate action." The full report on the investigation into the FCC's false claim of DDoS attacks against it is available on Scribd.
