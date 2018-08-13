@@ -1,13 +1,6 @@
 const summaryButton = document.getElementById('summarise');
 summaryButton.onclick = () => {
   // alert('clicked');
-  // document.getElementById("popup").innerHTML = "";
-  document.getElementById('main').innerHTML = '<object type="text/html" data="../html/summary.html" ></object>';
-  document.body.offsetWidth
-  // document.getElementsByTagName('object')[0].style.width = '400px';
+  // document.getElementsByTagName('html')[0].innerHTML = '<object type="text/html" data="../html/summary.html" ></object>';
+  window.open('../html/summary.html', '_self');
 };
-
-// Get the window dimensions
-const $window = $(window);
-const wWidth  = $window.width();
-const wHeight = $window.height();

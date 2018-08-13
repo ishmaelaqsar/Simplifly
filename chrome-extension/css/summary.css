@@ -1,7 +1,7 @@
-body {
+html {
     overflow:hidden;
-    width: 100%;
-    height: 100%;
+    width: 20em;
+    height: fit-content;
     background-color: antiquewhite
 }
 
@@ -13,6 +13,7 @@ body {
 
 .Summary-header {
     font-family: 'Merriweather', Georgia, 'Times New Roman', Times, serif;
+    height: 3em;
     font-size: 100%;
     max-width: 34em;
     padding: 0.1em;
@@ -24,47 +25,5 @@ body {
     font-family: 'Merriweather', Georgia, 'Times New Roman', Times, serif;
     font-size: 100%;
     max-width: 34em;
-    padding: 0 1em;
-}
-
-/*** Buttons :) ***/
-.button {
-    display: inline-block;
-    padding: 0.4em 0.75em;
-    margin: 0.5em 0.3em 0.75em 0;
-    border-radius: 0.75em;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: 'Merriweather', Georgia, 'Times New Roman', Times, serif;
-    font-weight: 400;
-    color: black;
-    background-color: antiquewhite;
-    box-shadow: inset 0 -0.6em 1em -0.35em rgba(0, 0, 0, 0.17), inset 0 0.6em 2em -0.3em rgba(255, 255, 255, 0.15), inset 0 0 0 0.05em rgba(255, 255, 255, 0.12);
-    text-align: center;
-    position: relative;
-    cursor: pointer;
-}
-
-.button::before {
-    background: orange;
-    border-radius: inherit;
-    content: '';
-    filter: blur(5px); /*Controls the extent of the initial glow*/
-    opacity: 0;
-    position: absolute;
-    transition: all .3s ease-in-out;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    right: 0;
-    z-index: -0.75; /*Set behind primary button*/
-}
-
-.button:hover::before {
-    filter: blur(5px); /*Increases the extent of the glow on hover*/
-    opacity: 0.125;
-}
-
-.button:active {
-    box-shadow: inset 0 0.6em 2em -0.3em rgba(0, 0, 0, 0.15), inset 0 0 0 0.05em rgba(255, 255, 255, 0.12);
+    padding: 1em 1em;
 }
