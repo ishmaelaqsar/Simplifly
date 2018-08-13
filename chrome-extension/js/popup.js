@@ -1,20 +1,13 @@
-// let changeColor = document.getElementById('changeColor');
-//
-// chrome.storage.sync.get('color', function(data) {
-//   changeColor.style.backgroundColor = data.color;
-//   changeColor.setAttribute('value', data.color);
-// });
-//
-// changeColor.onclick = function(element) {
-//   let color = element.target.value;
-//   chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-//     chrome.tabs.executeScript(
-//         tabs[0].id,
-//         {code: 'document.body.style.backgroundColor = "' + color + '";'});
-//   });
-// };
-
-const summarise = document.getElementById('summarise');
-summarise.onclick = element => {
-  alert(document.title);
+const summaryButton = document.getElementById('summarise');
+summaryButton.onclick = () => {
+  // alert('clicked');
+  // document.getElementById("popup").innerHTML = "";
+  document.getElementById('main').innerHTML = '<object type="text/html" data="../html/summary.html" ></object>';
+  document.body.offsetWidth
+  // document.getElementsByTagName('object')[0].style.width = '400px';
 };
+
+// Get the window dimensions
+const $window = $(window);
+const wWidth  = $window.width();
+const wHeight = $window.height();
