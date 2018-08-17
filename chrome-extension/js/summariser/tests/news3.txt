@@ -1,0 +1,43 @@
+The attorney representing Metallica and rap star Dr. Dre in their lawsuits against Napster is sending a barrage of letters to top universities, pushing them to block students from using the popular file-swapping software.
+
+The letters don't explicitly threaten a lawsuit against the universities. But they do include a copy of the groups' lawsuit against Napster, which contains a generic placeholder for adding new universities into the legal crosshairs.
+
+In the first version of its suit, filed last April, Metallica named Indiana University, the University of Southern California and Yale University as defendants because they had allowed their students to download music using high-speed university Internet connections. After the suit was filed, all three of the universities backed away from their hands-off policies, and Metallica dropped them from the suit.
+
+"There is no express threat in the letters that they're going to get sued," said Los Angeles attorney Howard King, who represents Metallica and Dr. Dre. "We're pretty comfortable that even without the threat of litigation that the universities will reach the same conclusion that Yale and USC have."
+
+The issue of university liability has faded somewhat in the past few months, as the legal and media spotlight has turned to the recording industry's lawsuit against Napster itself. In that suit, which has already resulted in one decision turning sharply against the company, the industry contends that Napster is contributing to massive numbers of copyright violations on the part of the service's members.
+
+But the music groups' lawsuits also bring into question the possibility that institutions providing access to Napster could be open to copyright lawsuits. Under copyright law, parties found to have aided violations carried out by others can be held liable under a theory known as "contributory infringement."
+
+In addition, the Recording Industry Association of America (RIAA) has noted that if it loses its bid to shut down Napster in its current form, it's likely to begin tracking down individual Napster users. At this point, however, it has not begun tracking individuals on the service.
+
+King's letters were initially sent to Harvard University, Columbia University, Stanford University and the University of Virginia. By the end of the day today, he will have sent similar letters to about 25 institutions, he said. The letters are going out to both the university presidents and the student newspapers, the attorney said.
+
+"We're really trying to stimulate some back-to-school debate," King said. "We think it's somewhat hypocritical to encourage students to study in the creative arts, when by allowing things like Napster to be used they'll make it impossible for their students to earn an income from their creative efforts."
+
+Universities said they were reviewing the letters but had no comment yet.
+
+"There are a lot of ethical issues they're dealing with here," said Harvard public information officer Doug Gavel. "Obviously (the administration) is going to give each of these serious consideration."
+
+King's letter asked that the universities respond by Sept. 22. After that time, the music groups would examine their other options, the attorney said.
+
+Gavel noted that Harvard would have an official statement on the issue of students' use of Napster by that time.
+
+A recent study by research group Gartner found that 34 percent of a sample of 50 universities have blocked students from using Napster on campus.
+
+Napster blocks the name hunters
+
+Later today, the RIAA is scheduled to file a motion in the 9th U.S. Circuit Court of Appeals in San Francisco, responding to Napster's request that the court overturn a preliminary injunction against the company. If the appeals court does not grant Napster's plea, the company will have to block all major-label content from being traded using its service, a result that executives have said will force the company to close its doors.
+
+Court: Shut down Napster The two sides are scheduled to meet in court to debate the merits of the injunction sometime during the first week of October.
+
+Separately, King will file a motion next week asking that a court stop Napster from blocking a service that at one time helped Metallica and Dr. Dre develop lists of individuals who were providing their songs for download online.
+
+Metallica hired NetPD, a U.K.-based company that was able to develop lists of hundreds of thousands of usernames for people who posted Metallica songs through Napster's service. Napster subsequently threw these individuals--at least temporarily--off the service in an attempt to win the protections against copyright liability given to some online companies by the Digital Millennium Copyright Act.
+
+But the company was also able to block NetPD from scanning its service. In Napster's terms of service, the company bars anybody from running automated "bots" that use its servers.
+
+King's motion will argue that Napster should not be able to take advantage of any defenses using the DMCA because it has blocked the music industry's ability to determine who is violating copyrights using the service.
+
+The letter campaign was first reported by The Chronicle of Higher Education.

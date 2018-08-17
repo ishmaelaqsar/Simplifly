@@ -1,4 +1,5 @@
 const NATURAL = require('natural');
+const NLP = require('compromise');
 const WordPOS = require('wordpos');
 const STOPWORD = require('./stopwords/Stopwords');
 const WORDPOS = new WordPOS();
@@ -21,6 +22,7 @@ function toProcessedArray(sentenceArray) {
         processedSentence += sentence[j] + ' ';
       }
     }
+    // console.log(processedSentence);
     processedArray[i] = processedSentence;
   }
   return processedArray;
@@ -38,14 +40,10 @@ function toWordArray(sentenceArray) {
 }
 
 function sentenceTokenizer(text) {
-  const pattern = /(.+?([A-Z].)\.(?:['")\\\s]["]?)+?\s?)/igm;
-  let match;
-  while( ( match = pattern.exec( text )) != null ) {
-    if( match.index === pattern.lastIndex ) {
-      pattern.lastIndex++;
-    }
-    // console.log( match[0] );
-  }
+  const doc = NLP(text);
+  // console.log(doc.sentences().out('text'));
+  const str = doc.sentences().out('array');
+  // console.log(str);
   return text.replace(/([.?!])\s*(?=[A-Z])/g, "$1|").split("|");
 }
 

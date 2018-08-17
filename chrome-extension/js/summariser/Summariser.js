@@ -1,6 +1,5 @@
 class Summariser {
   constructor(text) {
-    this.text = text;
     this.summary = Summariser.summarise(text);
   }
 
@@ -19,7 +18,7 @@ class Summariser {
     // console.log(wordArray);
     let graph = BUILD_GRAPH(wordArray, processedArray);
     // console.log(graph);
-    graph = SCORE_GRAPH(graph);
+    // graph = SCORE_GRAPH(graph);
     // console.log(graph);
     return BUILD_SUMMARY(graph, sentenceArray);
   }
@@ -32,6 +31,14 @@ class Summariser {
 // export default Summariser;
 
 const FS = require('fs');
-const text = FS.readFileSync('./tests/TestArticle1.txt', 'utf8'); // Change Article number from 1-5
+const text = FS.readFileSync('./tests/news2.txt', 'utf8'); // Change Article number from 1-5
 const summariser = new Summariser(text);
-console.log(summariser.Summary);
+const summary = summariser.Summary;
+console.log(summary);
+// FS.writeFile('./tests/news4_system5.txt', summary, (err) => {
+//   // throws an error, you could also catch it here
+//   if (err) throw err;
+//
+//   // success case, the file was saved
+//   console.log('summary saved');
+// });

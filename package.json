@@ -2,8 +2,11 @@
   "name": "Summariser",
   "version": "1.0.0",
   "dependencies": {
-    "natural": "latest",
+    "compromise": "^11.12.0",
     "compute-cosine-similarity": "latest",
-    "wordpos": "latest"
+    "natural": "^0.6.1",
+    "npm": "^6.4.0",
+    "pagerank.js": "^1.0.2",
+    "wordpos": "^1.1.6"
   }
 }

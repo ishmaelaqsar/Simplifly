@@ -33,13 +33,14 @@
         "https://*/*"
       ],
       "js": [
+        "jquery-3.3.1.min.js",
         "js/content.js"
-      ]
+      ],
+      "run_at": "document_end"
     }
   ],
   "permissions": [
     "activeTab",
-    "declarativeContent",
     "storage"
   ],
   "options_page": "html/options.html",

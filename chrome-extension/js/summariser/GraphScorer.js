@@ -12,7 +12,7 @@ function scoreGraph(graph) {
       if (graph.hasOwnProperty(i)) {
         newGraph[i] = {
           neighbors: graph[i].neighbors,
-          score: 1 - D,
+          score: (1 - D),
           position: graph[i].position
         };
         for (let j in graph[i].neighbors) {
@@ -24,6 +24,15 @@ function scoreGraph(graph) {
     graph = newGraph;
   }
   return graph;
+
+  // const pageRank = require('ngraph.pagerank');
+  // return pageRank(graph, 0.85, 0.0001);
+
+  // const pagerank = require('graphology-pagerank');
+  // // console.log(graph.exportEdges());
+  // const p = pagerank(graph, {maxIterations: 20, tolerance: 0.0001, weighted: true});
+  // console.log(p);
+  // return p;
 }
 
 function scoreDifference(a, b) {
