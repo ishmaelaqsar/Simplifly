@@ -1,26 +1,21 @@
 class Summariser {
-  constructor(text) {
-    this.summary = Summariser.summarise(text);
+  constructor(sentenceArray) {
+    this.summary = Summariser.summarise(sentenceArray);
   }
 
-  static summarise(text) {
+  static summarise(sentenceArray) {
     const PRE_PROCESSOR = require('./PreProcessor.js');
-    const BUILD_GRAPH = require('./GraphBuilder.js');
-    const SCORE_GRAPH = require('./GraphScorer.js');
+    const PAGE_RANK = require('./GraphBuilder.js');
     const BUILD_SUMMARY = require('./SentenceSelection.js');
 
-    // console.log(text);
-    const sentenceArray = PRE_PROCESSOR.tokenizer(text);
     // console.log(sentenceArray);
     const processedArray = PRE_PROCESSOR.toProcessedArray(sentenceArray);
     // console.log(processedArray);
     const wordArray = PRE_PROCESSOR.toWordArray(processedArray);
     // console.log(wordArray);
-    let graph = BUILD_GRAPH(wordArray, processedArray);
-    // console.log(graph);
-    // graph = SCORE_GRAPH(graph);
-    // console.log(graph);
-    return BUILD_SUMMARY(graph, sentenceArray);
+    const rankedSentences = PAGE_RANK(wordArray, processedArray);
+    // console.log(rankedSentences);
+    return BUILD_SUMMARY(rankedSentences, sentenceArray);
   }
 
   get Summary() {
@@ -28,13 +23,13 @@ class Summariser {
   }
 }
 
-// export default Summariser;
+export default Summariser;
 
-const FS = require('fs');
-const text = FS.readFileSync('./tests/news2.txt', 'utf8'); // Change Article number from 1-5
-const summariser = new Summariser(text);
-const summary = summariser.Summary;
-console.log(summary);
+// const FS = require('fs');
+// const text = FS.readFileSync('./tests/news3.txt', 'utf8'); // Change Article number from 1-5
+// const summariser = new Summariser(text);
+// const summary = summariser.Summary;
+// console.log(summary);
 // FS.writeFile('./tests/news4_system5.txt', summary, (err) => {
 //   // throws an error, you could also catch it here
 //   if (err) throw err;

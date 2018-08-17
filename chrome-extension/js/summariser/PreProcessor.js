@@ -1,8 +1,5 @@
-const NATURAL = require('natural');
-const NLP = require('compromise');
-const WordPOS = require('wordpos');
 const STOPWORD = require('./stopwords/Stopwords');
-const WORDPOS = new WordPOS();
+const TAG = require("en-pos").Tag;
 
 function toProcessedArray(sentenceArray) {
   const processedArray = [];
@@ -39,14 +36,5 @@ function toWordArray(sentenceArray) {
   return wordArray;
 }
 
-function sentenceTokenizer(text) {
-  const doc = NLP(text);
-  // console.log(doc.sentences().out('text'));
-  const str = doc.sentences().out('array');
-  // console.log(str);
-  return text.replace(/([.?!])\s*(?=[A-Z])/g, "$1|").split("|");
-}
-
 module.exports.toProcessedArray = toProcessedArray;
 module.exports.toWordArray = toWordArray;
-module.exports.tokenizer = sentenceTokenizer;

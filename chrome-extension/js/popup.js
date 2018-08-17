@@ -5,16 +5,13 @@ function summarise() {
         // An error occurred
         console.log("ERROR: ", chrome.runtime.lastError);
       } else {
-        const title = response.title;
-        const content = response.content;
-        console.log(title);
-        console.log(content);
+        console.log(response.message);
         window.location.href='../html/summary.html';
       }
     });
   });
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("DOMContentLoaded", () => {
   document.getElementById("summarise").addEventListener("click", summarise);
 });
