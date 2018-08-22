@@ -1,7 +1,7 @@
 {
   "name": "simplifly",
-  "version": "0.0.1",
-  "description": "Simplifly is a Chrome extension which allows you to turn any lengthy article 		into short bite-sized summary",
+  "version": "0.5.1",
+  "description": "Simplifly is a Chrome extension which allows you to turn any lengthy article into short bite-sized summary",
   "scripts": {
     "build": "node utils/build.js",
     "start": "node utils/webserver.js"

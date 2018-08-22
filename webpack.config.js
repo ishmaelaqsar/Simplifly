@@ -19,6 +19,7 @@ if (fileSystem.existsSync(secretsPath)) {
 }
 
 const options = {
+  mode: 'production',
   entry: {
     vendor: path.join(__dirname, "src", "jquery-3.3.1.min.js"),
     popup: path.join(__dirname, "src", "js", "popup.js"),

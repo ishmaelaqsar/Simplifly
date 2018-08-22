@@ -1,6 +1,6 @@
 html {
     overflow:hidden;
-    width: 12em;
+    width: 20em;
     height: fit-content;
     background-color: antiquewhite
 }
@@ -15,19 +15,27 @@ html {
     animation: App-logo-bounce 0.5s linear;
     animation-direction: alternate;
     animation-iteration-count: infinite;
-    height: 8em;
+    height: 10em;
 }
 
 .Welcome-header {
-    height: 6em;
+    height: 8em;
 }
 
-.Welcome-intro {
+.Welcome-intro1 {
     line-height: 1.5;
     font-family: 'Merriweather', Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.1em;
+    font-size: 1.3em;
     max-width: fit-content;
     padding: 1.8em 1em 0 1em;
+}
+
+.Welcome-intro2 {
+    line-height: 1.5;
+    font-family: 'Merriweather', Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.3em;
+    max-width: fit-content;
+    padding: 0 1em 0 1em;
 }
 
 /*** Buttons :) ***/
@@ -49,9 +57,9 @@ html {
 }
 
 .buttonSummarise {
-    font-size: 1.1em;
+    font-size: 1.3em;
     outline: none;
-    letter-spacing: .055em;
+    letter-spacing: .06em;
 }
 
 .button::before {

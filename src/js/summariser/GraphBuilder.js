@@ -7,7 +7,7 @@ const graph = require('pagerank.js');
 function pageRank(title, sentenceArray) {
   tfidf.addDocument(createArticle(sentenceArray));
   tfidf.addDocument(title);
-  const N = 8; // search radius, set between 2 and 10
+  const N = 2; // search radius, set between 2 and 10
   for (let i = 0; i < sentenceArray.length; i++) {
     const iScore = tfidf.tfidfs(sentenceArray[i]);
     // adjacent to the next N words
