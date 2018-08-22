@@ -1,12 +1,27 @@
 const STOPWORD = require('./stopwords/Stopwords');
 const stemmer = require('porter-stemmer').stemmer;
+// const pos = require('pos');
+// const tagger = new pos.Tagger();
 
 function processArray(sentenceArray) {
   const processedArray = [];
   for (let i = 0; i < sentenceArray.length; i++) {
     let sentence = sentenceArray[i];
     sentence = toWordArray(sentence);
+    // sentence = new pos.Lexer().lex(sentence);
     sentence = STOPWORD.removeStopwords(sentence); // remove stopwords from text
+    // // Filter to keep only nouns, verbs, and adjectives
+    // let taggedWords = tagger.tag(sentence);
+    // taggedWords = taggedWords.filter(x => {
+    //   const tag = x[1];
+    //   // N
+    //   return ((tag === 'NN') || (tag === 'NNP') || (tag === 'NNPS') || (tag === 'NNS'));
+    //   // N V
+    //   // return ((tag === 'NN') || (tag === 'NNP') || (tag === 'NNPS') || (tag === 'NNS') || (tag === 'VB') || (tag === 'VBD') || (tag === 'VBG') || (tag === 'VBN') || (tag === 'VBZ'));
+    //   // N A V
+    //   // return ((tag === 'JJ') || (tag === 'JJR') || (tag === 'JJS') || (tag === 'NN') || (tag === 'NNP') || (tag === 'NNPS') || (tag === 'NNS') || (tag === 'VB') || (tag === 'VBD') || (tag === 'VBG') || (tag === 'VBN') || (tag === 'VBZ'));
+    // });
+    // sentence = taggedWords.map(x => x[0]);
     sentence = sentence.map(x => stemmer(x)); // stem similar words
     sentence.map((x) => {
       return x.toLowerCase();

@@ -8,7 +8,9 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     if (document.getSelection().toString() !== '') {
       // title = $('h1:first').text();
       title = document.title;
-      content = window.getSelection().toString().replace(/([.?!])\s*(?=[A-Z])/g, "$1|").split("|");
+      content = window.getSelection().toString().replace(/([.?!])\s*(?=[A-Z])/g, "$1|").split("|").map(function(x) {
+        return $.trim(x);
+      });
     } else {
       title = $('h1:first').text();
       // title = document.title;

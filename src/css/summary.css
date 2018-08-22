@@ -3,7 +3,6 @@ html {
     width: 30em;
     height: fit-content;
     background-color: antiquewhite;
-    overflow-y: scroll;
 }
 ::-webkit-scrollbar {
     display: none;
@@ -27,7 +26,6 @@ html {
     line-height: 1.5;
     font-family: 'Merriweather', Georgia, 'Times New Roman', Times, serif;
     font-size: 1.3em;
-    max-width: 34em;
     padding: 0.5em 1em 0.5em 1em;
     word-spacing: .06em;
 }

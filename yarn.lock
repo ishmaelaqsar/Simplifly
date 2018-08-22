@@ -3908,6 +3908,10 @@ portfinder@^1.0.9:
     debug "^2.2.0"
     mkdirp "0.5.x"
 
+pos@^0.4.2:
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/pos/-/pos-0.4.2.tgz#20e9c77fbeedcc356823cea63c7585cace93be2a"
+
 posix-character-classes@^0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/posix-character-classes/-/posix-character-classes-0.1.1.tgz#01eac0fe3b5af71a2a6c02feabb8c1fef7e00eab"
@@ -5488,26 +5492,6 @@ widest-line@^2.0.0:
   resolved "https://registry.yarnpkg.com/widest-line/-/widest-line-2.0.0.tgz#0142a4e8a243f8882c0233aa0e0281aa76152273"
   dependencies:
     string-width "^2.1.1"
-
-wink-helpers@^1.4.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/wink-helpers/-/wink-helpers-1.5.0.tgz#367803b1dbee4b851d60752657288f3cd452b793"
-
-wink-nlp-utils@latest:
-  version "1.9.0"
-  resolved "https://registry.yarnpkg.com/wink-nlp-utils/-/wink-nlp-utils-1.9.0.tgz#57d0edc671b66a6b3ddcf4acab7bc0b1d5765ba4"
-  dependencies:
-    wink-helpers "^1.4.0"
-    wink-porter2-stemmer "^1.0.8"
-    wink-tokenizer "^4.0.0"
-
-wink-porter2-stemmer@^1.0.8:
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/wink-porter2-stemmer/-/wink-porter2-stemmer-1.0.8.tgz#66f156a184f6895ee994d7d942914198cb2c1a8f"
-
-wink-tokenizer@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/wink-tokenizer/-/wink-tokenizer-4.0.0.tgz#20c2a3805792e56bb7fbef696c2cfc74e098e0d9"
 
 worker-farm@^1.5.2, worker-farm@^1.6.0:
   version "1.6.0"

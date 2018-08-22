@@ -28,7 +28,7 @@ export default Summariser;
 
 // const FS = require('fs');
 // const text = FS.readFileSync('./tests/TestArticle1.txt', 'utf8'); // Change Article number from 1-5
-// const array = text.match(/([^\.!\?]+[\.!\?]+)|([^\.!\?]+$)/g);
+// const array = text.replace(/([.?!])\s*(?=[A-Z])/g, "$1|").split("|");
 // const summariser = new Summariser('FORTNITE is taking over, but you\'ll be amazed by just how much money the console, PC and mobile game is making.', array);
 // const summary = summariser.Summary;
 // console.log(summary);
