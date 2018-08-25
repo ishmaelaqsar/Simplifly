@@ -14,7 +14,8 @@ function setPage(title, body) {
 document.addEventListener("DOMContentLoaded", () => {
   console.log("DOM fully loaded and parsed");
   // Read it using the storage API
-  chrome.storage.sync.get(['title', 'content'], (items) => {
+  chrome.storage.local.get(['title', 'content'], (items) => {
     setPage(items.title, summarise(items.title, items.content));
   });
+  chrome.storage.local.clear();
 });

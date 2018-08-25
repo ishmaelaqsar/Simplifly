@@ -1,6 +1,6 @@
 {
   "name": "simplifly",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simplifly is a Chrome extension which allows you to turn any lengthy article into short bite-sized summary",
   "scripts": {
     "build": "node utils/build.js",
@@ -23,6 +23,7 @@
   "dependencies": {
     "compute-cosine-similarity": "latest",
     "css-loader": "^1.0.0",
+    "eslint": "^5.4.0",
     "file-loader": "^1.1.11",
     "fs-extra": "^7.0.0",
     "html-loader": "^0.5.5",
