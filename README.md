@@ -1,6 +1,8 @@
 # Simplifly
 
-A Chrome extension to produce summaries of news articles. 
+A Chrome extension to produce summaries of news articles.
+
+https://chrome.google.com/webstore/detail/simplifly/jioeflccmbeaeelfklklmbdjcbdeccnh
 
 ## How it words
 
