@@ -4,7 +4,7 @@ A Chrome extension to produce summaries of news articles.
 
 https://chrome.google.com/webstore/detail/simplifly/jioeflccmbeaeelfklklmbdjcbdeccnh
 
-## How it words
+## How it works
 
 ### 1. Scrape Article heading and body from the current active tab using jQuery.
 
