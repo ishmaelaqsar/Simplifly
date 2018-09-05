@@ -8,15 +8,15 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     if (document.getSelection().toString() !== '') {
       // title = $('h1:first').text();
       title = document.title;
-      content = fixContentArray(window.getSelection().toString().replace(/([.?!])\s*(?=[A-Z])/g, "$1|").split("|").map(function (x) {
+      content = window.getSelection().toString().replace(/([.?!])\s*(?=[A-Z])/g, "$1|").split("|").map(function (x) {
         return $.trim(x);
-      }));
+      });
     } else {
       title = $('h1:first').text();
       // title = document.title;
-      content = $('p:not([class])').map(function () {
+      content = fixContentArray($('p:not([class])').map(function () {
         return $.trim($(this).text());
-      }).get();
+      }).get());
     }
     // Save it using the Chrome extension storage API.
     chrome.storage.local.set({'title': title, 'content': content}, function () {

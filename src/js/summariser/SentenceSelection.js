@@ -1,6 +1,6 @@
 module.exports = function(topSentences, sentences) {
   const T =
-    Math.floor(sentences.length / 4) < 5 ? 5 : Math.floor(sentences.length) / 4; // number of vertices to retain for post-processing, set between 5 and 20
+    Math.floor(sentences.length / 5) < 5 ? 5 : Math.floor(sentences.length) / 4; // number of vertices to retain for post-processing, set between 5 and 20
   sentences = removeLineBreaks(sentences);
   // filter out one word sentences
   topSentences = topSentences.filter(
