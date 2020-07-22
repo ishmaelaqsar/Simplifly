@@ -2,8 +2,7 @@ import '../css/summary.css';
 import Summariser from '../js/summariser/Summariser.js';
 
 function summarise(title, sentenceArray) {
-  const summariser = new Summariser(title, sentenceArray);
-  return summariser.Summary;
+  return new Summariser(title, sentenceArray).Summary;
 }
 
 function setPage(title, body) {

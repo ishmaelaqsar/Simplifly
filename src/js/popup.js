@@ -1,14 +1,14 @@
 import '../css/popup.css';
 
 function summarise() {
-  chrome.tabs.query({active: true, currentWindow: true}, (tabs) => {
-    chrome.tabs.sendMessage(tabs[0].id, {message: 'getPage'}, (response) => {
+  chrome.tabs.query({ active: true, currentWindow: true }, tabs => {
+    chrome.tabs.sendMessage(tabs[0].id, { message: 'getPage' }, response => {
       if (chrome.runtime.lastError) {
         // An error occurred
         console.log("ERROR: ", chrome.runtime.lastError);
       } else {
         console.log(response.message);
-        window.location.href='../summary.html';
+        window.location.href = '../summary.html';
       }
     });
   });

@@ -1,57 +1,55 @@
 const webpack = require("webpack");
 const path = require("path");
-const fileSystem = require("fs");
 const env = require("./utils/env");
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const WriteFilePlugin = require("write-file-webpack-plugin");
 
-// load the secrets
-const alias = {};
-
-const secretsPath = path.join(__dirname, ("secrets." + env.NODE_ENV + ".js"));
-
 const fileExtensions = ["jpg", "jpeg", "png", "gif", "eot", "otf", "svg", "ttf", "woff", "woff2"];
 
-if (fileSystem.existsSync(secretsPath)) {
-    alias["secrets"] = secretsPath;
-}
-
 const options = {
-    mode: 'production',
+    name: "extension",
+    mode: "production",
     entry: {
-        vendor: path.join(__dirname, "src", "jquery-3.5.1.min.js"),
         popup: path.join(__dirname, "src", "js", "popup.js"),
         summary: path.join(__dirname, "src", "js", "summary.js"),
         options: path.join(__dirname, "src", "js", "options.js"),
         background: path.join(__dirname, "src", "js", "background.js"),
         content: path.join(__dirname, "src", "js", "content.js"),
+        vendor: path.join(__dirname, "src", "jquery-3.5.1.min.js"),
         index: path.join(__dirname, "src", "index.js")
     },
-    chromeExtensionBoilerplate: {
-        notHotReload: ["content"]
-    },
     externals: {
-        jquery: 'jQuery'
+        jquery: "jQuery"
     },
     output: {
-        path: path.join(__dirname, "build"),
-        filename: "[name].bundle.js"
+        path: path.resolve(__dirname, "build"),
+        filename: "[name].bundle.js",
     },
     node: {
-        fs: 'empty'
+        fs: "empty"
     },
     module: {
         rules: [
             {
                 test: /\.css$/,
-                loader: "style-loader!css-loader",
+                use: [
+                    {
+                        loader: "style-loader" // Creates style nodes from JS strings
+                    },
+                    {
+                        loader: "css-loader" // Translates CSS into CommonJS
+                    },
+                ],
                 exclude: /node_modules/
             },
             {
                 test: new RegExp('\.(' + fileExtensions.join('|') + ')$'),
-                loader: "file-loader?name=[name].[ext]",
+                loader: "file-loader",
+                options: {
+                    name: "[name].[ext]",
+                },
                 exclude: /node_modules/
             },
             {
@@ -61,9 +59,9 @@ const options = {
             },
             {
                 test: /jquery.+\.js$/,
-                loader: 'expose-loader',
+                loader: "expose-loader",
                 options: {
-                    exposes: ['$', 'jQuery'],
+                    exposes: ["$", "jQuery"],
                 },
             },
         ],
